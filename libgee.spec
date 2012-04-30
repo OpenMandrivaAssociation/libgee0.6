@@ -63,7 +63,7 @@ find %{buildroot} -name '*.la' -exec rm -f {} ';'
 
 %files -n %{libname}
 %doc AUTHORS COPYING NEWS README
-%{_libdir}/libgee-%{api}.so.%{major}*
+%{_libdir}/libgee.so.%{major}*
 
 %files -n %{girname}
 %{_libdir}/girepository-1.0/Gee-%{gir_major}.typelib
