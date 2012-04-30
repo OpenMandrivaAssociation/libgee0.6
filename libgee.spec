@@ -1,3 +1,4 @@
+%define oname libgee
 %define api 0.6
 %define major 2
 %define gir_major 1.0
@@ -6,14 +7,14 @@
 %define girname %mklibname gee-gir %{gir_major}
 %define develname %mklibname -d gee %{major}
 
-Name:		libgee0.6
+Name:		%{oname}0.6
 Summary:	GObject-based collection library
 Version:	0.6.4
 Release:	2
 License: 	LGPLv2+
 Group:		System/Libraries
 URL: 		http://live.gnome.org/Libgee
-Source0: 	ftp://ftp.gnome.org/pub/GNOME/sources/libgee/%{api}/%{name}-%{version}.tar.xz
+Source0: 	ftp://ftp.gnome.org/pub/GNOME/sources/libgee/%{api}/%{oname}-%{version}.tar.xz
 
 BuildRequires:	pkgconfig(glib-2.0)
 BuildRequires:	pkgconfig(gobject-introspection-1.0)
@@ -48,7 +49,7 @@ This package provides the necessary development libraries and include
 files to allow you to develop with libgee.
 
 %prep
-%setup -q
+%setup -qn %{oname}-%{version}
 
 %build
 %configure2_5x \
