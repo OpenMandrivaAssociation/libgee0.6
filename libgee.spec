@@ -1,15 +1,15 @@
-%define api 0.8
-%define major 0
-%define gir_major 0.8
+%define api 0.6
+%define major 2
+%define gir_major 1.0
 
-%define libname %mklibname gee %{api} %{major}
+%define libname %mklibname gee %{major}
 %define girname %mklibname gee-gir %{gir_major}
-%define develname %mklibname -d gee 
+%define develname %mklibname -d gee %{major}
 
-Name:		libgee
+Name:		libgee0.6
 Summary:	GObject-based collection library
-Version:	0.7.2
-Release:	3
+Version:	0.6.4
+Release:	2
 License: 	LGPLv2+
 Group:		System/Libraries
 URL: 		http://live.gnome.org/Libgee
@@ -42,7 +42,6 @@ Summary:	Libraries and include files for developing with libgee
 Group:		Development/C
 Requires:	%{libname} = %{version}
 Requires:	%{girname} = %{version}
-Provides:	%{name}-devel = %{version}-%{release}
 
 %description -n	%{develname}
 This package provides the necessary development libraries and include
