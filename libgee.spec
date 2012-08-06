@@ -9,8 +9,8 @@
 
 Name:		%{oname}0.6
 Summary:	GObject-based collection library
-Version:	0.6.4
-Release:	2
+Version:	0.6.5
+Release:	1
 License: 	LGPLv2+
 Group:		System/Libraries
 URL: 		http://live.gnome.org/Libgee
