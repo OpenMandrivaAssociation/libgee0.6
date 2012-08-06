@@ -1,6 +1,6 @@
-%define oname libgee
-%define api 0.6
-%define major 2
+%define oname	libgee
+%define api	0.6
+%define major	2
 %define gir_major 1.0
 
 %define libname %mklibname gee %{major}
@@ -14,7 +14,7 @@ Release:	2
 License: 	LGPLv2+
 Group:		System/Libraries
 URL: 		http://live.gnome.org/Libgee
-Source0: 	ftp://ftp.gnome.org/pub/GNOME/sources/libgee/%{api}/%{oname}-%{version}.tar.xz
+Source0: 	ftp://ftp.gnome.org/pub/GNOME/sources/libgee/%{oname}-%{version}.tar.xz
 
 BuildRequires:	pkgconfig(glib-2.0)
 BuildRequires:	pkgconfig(gobject-introspection-1.0)
