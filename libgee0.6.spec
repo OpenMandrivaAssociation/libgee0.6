@@ -9,13 +9,13 @@
 %define girname %mklibname gee-gir %{gimajor}
 %define devname %mklibname -d gee %{major}
 
-Name:		%{oname}0.6
+Name:		%{oname}%{api}
 Summary:	GObject-based collection library
 Version:	0.6.7
-Release:	1
+Release:	2
 License: 	LGPLv2+
 Group:		System/Libraries
-URL: 		http://live.gnome.org/Libgee
+Url: 		http://live.gnome.org/Libgee
 Source0: 	ftp://ftp.gnome.org/pub/GNOME/sources/libgee/%{url_ver}/%{oname}-%{version}.tar.xz
 
 BuildRequires:	pkgconfig(glib-2.0)
@@ -61,7 +61,6 @@ files to allow you to develop with libgee.
 
 %install
 %makeinstall_std
-find %{buildroot} -name '*.la' -exec rm -f {} ';'
 
 %files -n %{libname}
 %doc AUTHORS COPYING NEWS README
