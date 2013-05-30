@@ -4,13 +4,12 @@
 %define api	0.6
 %define major	2
 %define gimajor 1.0
-
 %define libname %mklibname gee %{major}
 %define girname %mklibname gee-gir %{gimajor}
 %define devname %mklibname -d gee %{major}
 
-Name:		%{oname}%{api}
 Summary:	GObject-based collection library
+Name:		%{oname}%{api}
 Version:	0.6.7
 Release:	2
 License: 	LGPLv2+
@@ -63,14 +62,13 @@ files to allow you to develop with libgee.
 %makeinstall_std
 
 %files -n %{libname}
-%doc AUTHORS COPYING NEWS README
 %{_libdir}/libgee.so.%{major}*
 
 %files -n %{girname}
 %{_libdir}/girepository-1.0/Gee-%{gimajor}.typelib
 
 %files -n %{devname}
-%doc ChangeLog
+%doc AUTHORS COPYING NEWS README ChangeLog
 %{_libdir}/*.so
 %{_libdir}/pkgconfig/*
 %{_includedir}/*
