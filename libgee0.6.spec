@@ -1,8 +1,8 @@
 %define url_ver %(echo %{version}|cut -d. -f1,2)
 
-%define oname	libgee
-%define api	0.6
-%define major	2
+%define oname libgee
+%define api 0.6
+%define major 2
 %define gimajor 1.0
 %define libname %mklibname gee %{major}
 %define girname %mklibname gee-gir %{gimajor}
@@ -10,13 +10,12 @@
 
 Summary:	GObject-based collection library
 Name:		%{oname}%{api}
-Version:	0.6.7
-Release:	2
-License: 	LGPLv2+
+Version:	0.6.8
+Release:	1
+License:	LGPLv2+
 Group:		System/Libraries
-Url: 		http://live.gnome.org/Libgee
-Source0: 	ftp://ftp.gnome.org/pub/GNOME/sources/libgee/%{url_ver}/%{oname}-%{version}.tar.xz
-
+Url:		http://live.gnome.org/Libgee
+Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/libgee/%{url_ver}/%{oname}-%{version}.tar.xz
 BuildRequires:	pkgconfig(glib-2.0)
 BuildRequires:	pkgconfig(gobject-introspection-1.0)
 
