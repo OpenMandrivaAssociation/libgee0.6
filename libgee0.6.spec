@@ -14,7 +14,7 @@ Version:	0.6.8
 Release:	11
 License:	LGPLv2+
 Group:		System/Libraries
-Url:		http://live.gnome.org/Libgee
+Url:		https://live.gnome.org/Libgee
 Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/libgee/%{url_ver}/%{oname}-%{version}.tar.xz
 BuildRequires:	pkgconfig(glib-2.0)
 BuildRequires:	pkgconfig(gobject-introspection-1.0)
